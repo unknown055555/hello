@@ -362,11 +362,11 @@ li {
     color: red;
 }
 
-.main-admission h1{
+.main-2 h1{
     justify-self: center;
     margin-top: 30px;
 }
-.main-admission .info{
+.main-2 .info{
     justify-self: center;
     width: 75%;
     display: flex;
@@ -374,7 +374,7 @@ li {
     flex-direction: column;
     justify-content: center;
 }
-.main-admission li{
+.main-2 li{
     list-style:disc;
 }
 
