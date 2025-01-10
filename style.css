@@ -385,6 +385,7 @@ li {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        font-size: smaller;
     }
 
     .nav-links {
