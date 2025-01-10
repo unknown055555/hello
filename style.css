@@ -1,0 +1,471 @@
+* {
+    margin: 5px;
+}
+
+/* Existing Styles (No changes above this) */
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgba(13, 2, 62, 0.849);
+}
+
+.open-sans-fonter {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.container {
+    /* border: 2px solid red; */
+    min-height: 100rem;
+    /* padding: 10px; */
+}
+
+.nav-bar {
+    /* border: 2px solid black; */
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    min-width: 30%;
+    justify-content: space-around;
+
+}
+
+.btn {
+    font-weight: 500;
+    border-radius: 9px;
+    height: 2.5em;
+    width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, color 0.5s, transform 0.2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.15);
+    background-color: rgba(34, 6, 160, 0.751);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+li {
+    list-style: none;
+}
+
+.nav-bar img {
+    max-width: 30em;
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    min-height: 90rem;
+    margin: 5px;
+
+    /* border: 2px solid blue; */
+
+}
+
+
+
+.image-container {
+    border-radius: 30px;
+    height: 50em;
+    overflow: hidden;
+}
+
+.main .info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    text-align: justify;
+}
+
+.right-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-msg-learn-more {
+    width: auto;
+    display: flex;
+    justify-self: center;
+}
+
+.right-info {
+    padding: 15px;
+    display: grid;
+    gap: 20px;
+}
+
+.left-info {
+    display: grid;
+    /* grid-template-rows: 50% 50%; */
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    gap: 20px;
+}
+
+.about-institute {
+    grid-column: span 2;
+}
+
+.info-box {
+    margin-top: 27px;
+    width: 70%;
+    display: flex;
+    /* border: 3px solid black; */
+    background-color: rgb(24 2 123 / 74%);
+    justify-self: center;
+    justify-content: space-around;
+    font-size: larger;
+    border-radius: 20px;
+
+}
+.about-institute .btn2{
+    width: auto;
+    margin-top: 2rem;
+    justify-self: center;
+    padding: 5px;
+    align-self: center;
+    padding: 10px;
+}
+.infobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 15rem;
+    color: white;
+}
+
+.infobox h4 {
+    color: white;
+}
+
+.academic-programme {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 25px;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.academic-programme h1 {
+    grid-column: span 3;
+}
+
+.academic-programme li {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 100%;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.btn2 {
+    background-color: rgba(34, 6, 160, 0.751);
+    color: white;
+    padding: 10px;
+    /* border: 2px solid rgba(34, 6, 160, 0.751); */
+    cursor: pointer;
+    border-radius: 7px;
+    transition: transform 0.2s;
+}
+
+.btn2:hover {
+    transform: scale(1.15);
+    transition: transform 0.2s ease;
+}
+
+.campus-life {
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: 1fr 2fr;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.campus-life .detail {
+    align-self: center;
+}
+.campus-life .detail h1{
+    justify-self: center;
+}
+.campus-life .detail p{
+    text-align: center;
+}
+
+.clubs {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.campus-life .detail-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.detail-box .next-arrow{
+    position: relative;
+    transform: translateY(15%);
+    transition: transform 0.5s;
+} 
+
+
+ .detail-box:hover .next-arrow{
+    transform: translateY(-150%);
+    transition: transform 0.5s ease;
+    
+}
+
+.detail-box:hover h2, .detail-box:hover p, .detail-box:hover .club-sign{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.main-recruiters{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.main-recruiters .detail {
+    align-self: center;
+}
+.main-recruiters .detail h1{
+    justify-self: center;
+}
+.main-recruiters .detail p{
+    text-align: center;
+}
+.recruit-logos ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.recruit-logos ul img{
+    height: 50px;
+}
+.recruit-logos ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recruit-logos .btn2{
+    width: auto;
+    justify-self: center;
+}
+
+.footer {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+.left-social-content li img{
+    transition: transform 0.2s;
+}
+
+.left-social-content img{
+    height: 30px;
+}
+.left-social-content img:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: transform 0.s ease;
+}
+
+.left-social-content, .left-image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left-social-content{
+    display: flex;
+    flex-direction: row;
+}
+.right-footer .right-content{
+    display: grid;
+    margin-left: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+}
+.right-footer .right-content li{
+    justify-self: flex-start;
+    align-self: center;
+    transition: color 0.2s ease;
+}
+.right-footer .right-content li:hover{
+    cursor: pointer;
+    color: #999897a4;
+    transition: color 0.2s ease;
+}
+.right-content-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+.first-phno, .first-email,.first-location{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.first-location p{
+    background-color: red;
+}
+.first-location a:link{
+    color: red;
+}
+
+.main-admission h1{
+    justify-self: center;
+    margin-top: 30px;
+}
+.main-admission .info{
+    justify-self: center;
+    width: 75%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-admission li{
+    list-style:disc;
+}
+
+
+/* Media Queries for width less than 900px */
+@media (max-width: 900px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+        left: -1.5rem;
+    }
+
+    .nav-logo img{
+        height: 3.7rem;
+    }
+    .main {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .image-container {
+        height: auto;
+    }
+
+    .main .info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .right-info, .left-info {
+        padding: 10px;
+    }
+
+    .info-box {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .academic-programme {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .campus-life {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .campus-life .detail > p{
+        text-align: justify;
+    }
+    .clubs {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .main-recruiters {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .recruit-logos ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-left: -1rem;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .right-footer .right-content {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .right-content-2 {
+        margin: 0 auto;
+        align-items: center;
+    }
+}
