@@ -64,7 +64,14 @@ h6 {
     background-color: rgba(34, 6, 160, 0.751);
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
+.technical-clubs li{
+    transition:transform 0.3s;
+}
+.technical-clubs li:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 li {
     list-style: none;
 }
@@ -145,7 +152,8 @@ li {
     border-radius: 20px;
 
 }
-.about-institute .btn2{
+
+.about-institute .btn2 {
     width: auto;
     margin-top: 2rem;
     justify-self: center;
@@ -153,6 +161,7 @@ li {
     align-self: center;
     padding: 10px;
 }
+
 .infobox {
     display: flex;
     flex-direction: column;
@@ -213,16 +222,18 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .campus-life .detail {
     align-self: center;
 }
-.campus-life .detail h1{
+
+.campus-life .detail h1 {
     justify-self: center;
 }
-.campus-life .detail p{
+
+.campus-life .detail p {
     text-align: center;
 }
 
@@ -232,7 +243,7 @@ li {
     gap: 60px;
 }
 
-.campus-life .detail-box{
+.campus-life .detail-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -240,28 +251,30 @@ li {
     align-self: center;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
 
-.detail-box .next-arrow{
+.detail-box .next-arrow {
     position: relative;
     transform: translateY(15%);
     transition: transform 0.5s;
-} 
-
-
- .detail-box:hover .next-arrow{
-    transform: translateY(-150%);
-    transition: transform 0.5s ease;
-    
 }
 
-.detail-box:hover h2, .detail-box:hover p, .detail-box:hover .club-sign{
+
+.detail-box:hover .next-arrow {
+    transform: translateY(-150%);
+    transition: transform 0.5s ease;
+
+}
+
+.detail-box:hover h2,
+.detail-box:hover p,
+.detail-box:hover .club-sign {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
-.main-recruiters{
+.main-recruiters {
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -269,25 +282,31 @@ li {
 .main-recruiters .detail {
     align-self: center;
 }
-.main-recruiters .detail h1{
+
+.main-recruiters .detail h1 {
     justify-self: center;
 }
-.main-recruiters .detail p{
+
+.main-recruiters .detail p {
     text-align: center;
 }
-.recruit-logos ul{
+
+.recruit-logos ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.recruit-logos ul img{
+
+.recruit-logos ul img {
     height: 50px;
 }
-.recruit-logos ul li{
+
+.recruit-logos ul li {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.recruit-logos .btn2{
+
+.recruit-logos .btn2 {
     width: auto;
     justify-self: center;
 }
@@ -299,74 +318,86 @@ li {
 }
 
 
-.left-social-content li img{
+.left-social-content li img {
     transition: transform 0.2s;
 }
 
-.left-social-content img{
+.left-social-content img {
     height: 30px;
 }
-.left-social-content img:hover{
+
+.left-social-content img:hover {
     cursor: pointer;
     transform: scale(0.8);
     transition: transform 0.s ease;
 }
 
-.left-social-content, .left-image-content{
+.left-social-content,
+.left-image-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.left-social-content{
+
+.left-social-content {
     display: flex;
     flex-direction: row;
 }
-.right-footer .right-content{
+
+.right-footer .right-content {
     display: grid;
     margin-left: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 45px;
 }
-.right-footer .right-content li{
+
+.right-footer .right-content li {
     justify-self: flex-start;
     align-self: center;
     transition: color 0.2s ease;
 }
-.right-footer .right-content li:hover{
+
+.right-footer .right-content li:hover {
     cursor: pointer;
     color: #999897a4;
     transition: color 0.2s ease;
 }
-.right-content-2{
+
+.right-content-2 {
     display: flex;
     flex-direction: column;
     margin-left: 5rem;
 }
 
-.first-phno, .first-email,.first-location{
+.first-phno,
+.first-email,
+.first-location {
     display: flex;
     /* justify-content: center; */
     align-items: center;
 }
-.copyright
-{
+
+.copyright {
     display: flex;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
 }
-.first-location p{
+
+.first-location p {
     background-color: red;
 }
-.first-location a:link{
+
+.first-location a:link {
     color: red;
 }
 
-.main-2 h1{
+.main-2 h1 {
     justify-self: center;
     margin-top: 30px;
 }
-.main-2 .info{
+
+.main-2 .info {
     justify-self: center;
     width: 75%;
     display: flex;
@@ -374,13 +405,64 @@ li {
     flex-direction: column;
     justify-content: center;
 }
-.main-2 li{
-    list-style:disc;
+
+.main-2 li {
+    list-style: disc;
 }
+
+.sprt-vid {
+    justify-self: center;
+    height: 270px;
+    width: 270px;
+}
+
+.sprt-vid video {
+    height: inherit;
+}
+
+.sprt-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.sprt-social {
+    margin-top: 120px;
+}
+
+.sprt-social li {
+    list-style: none;
+}
+
+.sprt-social img {
+    height: 50px;
+}
+
+.sixth-one{
+    background-color: rgba(34, 6, 160, 0.751);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.seventh-one .recruit-logos ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 
 
 /* Media Queries for width less than 900px */
 @media (max-width: 900px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: left;
+    }
+
     .nav-bar {
         flex-direction: column;
         align-items: center;
@@ -397,9 +479,10 @@ li {
         left: -1.5rem;
     }
 
-    .nav-logo img{
+    .nav-logo img {
         height: 3.7rem;
     }
+
     .main {
         margin: 10px;
         padding: 5px;
@@ -415,7 +498,8 @@ li {
         gap: 15px;
     }
 
-    .right-info, .left-info {
+    .right-info,
+    .left-info {
         padding: 10px;
     }
 
@@ -436,9 +520,15 @@ li {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    .campus-life .detail > p{
+
+    .campus-life .detail>p {
         text-align: justify;
     }
+    .recruit-logos{
+        margin: 0;
+        margin-left: -1rem;
+    }
+
     .clubs {
         flex-direction: column;
         gap: 30px;
@@ -469,4 +559,10 @@ li {
         margin: 0 auto;
         align-items: center;
     }
+
+    .sixth-one{
+        width: 22rem;
+        margin-left: -3.89rem;
+    }
+
 }
