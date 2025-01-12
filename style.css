@@ -50,7 +50,7 @@ h6 {
     font-weight: 500;
     border-radius: 9px;
     height: 2.5em;
-    width: 5em;
+    width: 6em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -438,7 +438,7 @@ li {
     height: 50px;
 }
 
-.sixth-one{
+.tnp-sixth-one{
     background-color: rgba(34, 6, 160, 0.751);
     color: white;
     padding: 10px;

@@ -12,6 +12,7 @@ document.querySelector("#contact-btn").addEventListener('click', () => {
   });
 });
 
+
 document.querySelector(".left-social-content #fb").addEventListener("click", function () {
   // The URL to redirect to
   window.location.href = "https://www.facebook.com/BITSindriDhanbad/";
@@ -63,6 +64,18 @@ document.querySelector(".tnp-page-redirect").addEventListener("click", function 
   // The URL to redirect to
   window.location.href = "./training-and-placement.html";
 });  
+document.querySelector(".facility-page-redirect").addEventListener("click", function () {
+  // The URL to redirect to
+  window.location.href = "./facilities.html";
+});  
+document.querySelector(".notice-page-redirect").addEventListener("click", function () {
+  // The URL to redirect to
+  window.location.href = "./notices.html";
+});  
+document.querySelector(".fee-page-redirect").addEventListener("click", function () {
+  // The URL to redirect to
+  window.location.href = "./fee-structure.html";
+});  
 document.querySelector(".a-r-redirect").addEventListener("click", function () {
   // The URL to redirect to
   window.location.href = "https://www.antiragging.in/";
@@ -91,6 +104,12 @@ document.querySelector(".recruit-logos .btn2").addEventListener("click", functio
   // The URL to redirect to
   window.location.href = "./training-and-placement.html";
 });  
+document.querySelector("#academics").addEventListener('click', () => {
+  // Scroll to the target section smoothly
+  document.querySelector(".academic-programme").scrollIntoView({ behavior: 'smooth' });
+});
+
+
 
 document.querySelector(".right-msg-learn-more").addEventListener("click", function () {
   // The URL to redirect to
