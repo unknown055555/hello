@@ -13,6 +13,14 @@ document.querySelector("#contact-btn").addEventListener('click', () => {
 });
 
 
+// document.querySelector(".left-footer left-image-content img").addEventListener("click", function () {
+//   // The URL to redirect to
+//   window.location.href = "./index.html";
+// });
+document.querySelector(".left-footer .left-image-content img").addEventListener("click", function () {
+  // The URL to redirect to
+  window.location.href = "./index.html";
+});
 document.querySelector(".left-social-content #fb").addEventListener("click", function () {
   // The URL to redirect to
   window.location.href = "https://www.facebook.com/BITSindriDhanbad/";
@@ -59,7 +67,49 @@ document.querySelector(".pg-page-redirect").addEventListener("click", function (
 document.querySelector(".phd-page-redirect").addEventListener("click", function () {
   // The URL to redirect to
   window.location.href = "./phd.html";
-});  
+}); 
+
+
+//for scrolling animation througout the page
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  const elements = document.querySelectorAll(".scroll-appear-x-lr, .scroll-appear-x-rl, .scroll-appear-y-dt");
+
+  const handleScroll = () => {
+      elements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+          if (isVisible) {
+              el.classList.add("visible");
+          } else {
+              el.classList.remove("visible");
+          }
+      });
+  };
+
+  // Trigger scroll once to check the elements in view on load
+  handleScroll();
+
+  window.addEventListener("scroll", handleScroll);
+});
+
+//loading screen
+document.addEventListener("DOMContentLoaded", () => {
+
+  setTimeout(() => {
+    // by default loading screen is visible and content is hidden
+    // Hide the loading screen
+    document.getElementById("loading-screen").style.display = "none";
+    // Show the main content
+    document.querySelector(".container").style.display="block"
+    document.querySelector(".container").scrollIntoView({ behavior: 'smooth' });
+  }, 1000);
+
+});
+
+
+
 document.querySelector(".tnp-page-redirect").addEventListener("click", function () {
   // The URL to redirect to
   window.location.href = "./training-and-placement.html";
@@ -131,3 +181,4 @@ document.querySelector("#ewdwed").addEventListener("click", function () {
   // The URL to redirect to
   window.location.href = "./pg.html";
 });  
+
