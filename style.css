@@ -687,7 +687,7 @@ li {
     .scroll-appear-x-rl {
         opacity: 0;
         transform: translateY(10px);
-        transition: opacity 1s , transform 1s ease-out;
+        transition: opacity 1.5s , transform 1.5s ease-out;
     }
 
     .scroll-appear-x-rl.visible {
@@ -699,7 +699,7 @@ li {
     .scroll-appear-x-lr {
         opacity: 0;
         transform: translateY(-10px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
     }
 
     .scroll-appear-x-lr.visible {
@@ -711,7 +711,7 @@ li {
     .scroll-appear-y-dt {
         opacity: 0;
         transform: translateY(10px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
     }
 
     .scroll-appear-y-dt.visible {
