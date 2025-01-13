@@ -26,7 +26,7 @@ h6 {
 
 .container {
     /* border: 2px solid red; */
-    min-height: 100rem;
+    /* min-height: 100rem; */
     /* padding: 10px; */
 }
 
@@ -88,7 +88,7 @@ li {
 }
 
 .main {
-    min-height: 90rem;
+    /* min-height: 90rem; */
     margin: 5px;
 
     /* border: 2px solid blue; */
@@ -443,6 +443,8 @@ li {
     color: white;
     padding: 10px;
     border-radius: 20px;
+    width: 105%;
+    margin-left: -1.2rem;
 }
 .seventh-one .recruit-logos ul{
     display: grid;
@@ -477,6 +479,8 @@ li {
         gap: 5px;
         position: relative;
         left: -1.5rem;
+        font-size: smaller;
+
     }
 
     .nav-logo img {
@@ -487,20 +491,28 @@ li {
         margin: 10px;
         padding: 5px;
     }
-
     .image-container {
         height: auto;
     }
-
+    #abt-info{
+        width: auto;
+    }
+    #dm{
+        width: auto;
+    }
     .main .info {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-
+    .main-2 .info{
+        width: 100%;
+    }
     .right-info,
     .left-info {
         padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .info-box {
@@ -550,6 +562,9 @@ li {
     }
     .seventh-one h1{
         margin-left: 2rem;
+    }
+    .seventh-one{
+        margin-left: 2.5rem;
     }
     .footer {
         grid-template-columns: 1fr;
