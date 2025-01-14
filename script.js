@@ -13,10 +13,7 @@ document.querySelector("#contact-btn").addEventListener('click', () => {
 });
 
 
-// document.querySelector(".left-footer left-image-content img").addEventListener("click", function () {
-//   // The URL to redirect to
-//   window.location.href = "./index.html";
-// });
+
 document.querySelector(".left-footer .left-image-content img").addEventListener("click", function () {
   // The URL to redirect to
   window.location.href = "./index.html";
@@ -88,11 +85,11 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   };
 
-  // Trigger scroll once to check the elements in view on load
   handleScroll();
 
   window.addEventListener("scroll", handleScroll);
 });
+
 
 //loading screen
 document.addEventListener("DOMContentLoaded", () => {
@@ -177,8 +174,7 @@ document.querySelector(".about-institute .btn2").addEventListener("click", funct
 
 
 
-document.querySelector("#ewdwed").addEventListener("click", function () {
-  // The URL to redirect to
+document.querySelector("#test-element").addEventListener("click", function () {
   window.location.href = "./pg.html";
 });  
 
